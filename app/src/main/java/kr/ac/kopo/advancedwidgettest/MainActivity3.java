@@ -30,5 +30,10 @@ public class MainActivity3 extends AppCompatActivity {
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,items);
         auto.setAdapter(adapter);
+
+        MultiAutoCompleteTextView.CommaTokenizer commaToken=new MultiAutoCompleteTextView.CommaTokenizer();
+        multi.setTokenizer(commaToken);
+        multi.setAdapter(adapter);
+
     }
 }
